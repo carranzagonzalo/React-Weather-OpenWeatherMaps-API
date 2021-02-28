@@ -6,7 +6,7 @@ import Error from './components/Error';
 
 function App() {
 
-    // state del formulario
+  
   const [busqueda, guardarBusqueda] = useState({ 
       ciudad: '',
       pais: ''
@@ -30,7 +30,7 @@ function App() {
           guardarResultado(resultado);
           guardarConsultar(false);
 
-          // Detecta si hubo resultados correctos en la consulta
+         
 
           if(resultado.cod === "404") {
               guardarError(true);
@@ -41,7 +41,7 @@ function App() {
         
     }
     consultarAPI();
-    // eslint-disable-next-line
+   
   },[consultar]);
 
   let componente;
@@ -52,8 +52,6 @@ function App() {
                     resultado={resultado}
                 />
   }
-
-
 
   return (
     <Fragment>

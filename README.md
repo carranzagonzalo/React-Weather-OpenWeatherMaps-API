@@ -8,4 +8,4 @@ npm start
 
 Build for production
 npm run build
-https://stoic-murdock-1ba0d1.netlify.app/
+https://react-weather-openweathermap.netlify.app/

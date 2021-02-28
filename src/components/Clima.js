@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 const Clima = ({resultado}) => {
 
-    // extraer los valores
+   
     const { name, main } = resultado;
 
     if(!name) return null;
 
-    // Grados Celcius
+ 
     const celcius = 273.15;
 
     return ( 

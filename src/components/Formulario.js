@@ -8,23 +8,19 @@ const Formulario = ({busqueda, guardarBusqueda, guardarConsultar}) => {
 
     const [error, guardarError] = useState(false);
 
-    // extraer ciudad y pais
     const { ciudad, pais } = busqueda;
 
-    // función que coloca los elementos en el state
     const handleChange = e => {
-        // actualizar el state
         guardarBusqueda({
             ...busqueda,
             [e.target.name] : e.target.value
         });
     }
 
-    // Cuando el usuario da submit al form
+   
     const handleSubmit = e => {
         e.preventDefault();
 
-        // validar
         if(ciudad.trim() === '' || pais.trim() === '') {
             guardarError(true);
             return;
